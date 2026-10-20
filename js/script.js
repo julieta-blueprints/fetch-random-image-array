@@ -26,9 +26,9 @@ const selectRandomImage = function (images){
 
 
 const displayImage = function(randomImage){
-    const author = [randomImage.author];
-    const imageAddress = [randomImage.download_url];
-    const imageUrl = [randomImage.url];
+    const author = randomImage.author;
+    const imageAddress = randomImage.download_url;
+    const imageUrl = randomImage.url;
     authorSpan.innerText = author;
     img.src = imageAddress;
     img.alt = `Author's name: ${author}, image's url ${imageUrl}`;
